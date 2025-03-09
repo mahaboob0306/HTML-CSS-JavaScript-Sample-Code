@@ -57,6 +57,10 @@ background-color: aliceblue;
     text-decoration: none;
     color: #f1ecec;
 }
+
+#navlist li a:hover{
+    color:white
+}
 p{
     font-size: 10px;
     font-weight: bold;

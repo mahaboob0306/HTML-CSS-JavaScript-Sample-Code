@@ -1,0 +1,11 @@
+footer{
+    background-color: grey;
+    display: flex;
+}
+footer ul li a{
+    font-size: 12px;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: purple;
+}
