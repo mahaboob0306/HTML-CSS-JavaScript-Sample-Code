@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: aliceblue;
+        }
+        #taskList{
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+         background-color: white;
+         padding: 10px;
+         margin: 5px;
+         display:flex;
+         justify-content: space-between;
+         align-items: center;
+         border-radius: 5px;
+         box-shadow: 0px 0px 5px grey;
+        }
+        .completed{
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+   <h1>ToDo-List</h1>
+   <input type="text" id="taskInput" placeholder="Enter a task">
+   <button id="addTask">Add Task</button>
+   <ul id="taskList"></ul> 
+   <script src="script.js"></script>
+</body>
+</html>

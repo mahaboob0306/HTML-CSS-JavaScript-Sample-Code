@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<script>
+    function getRandomColor(){
+        let letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {  // Fixing the loop to generate a 6 character color code
+            color += letters[Math.floor(Math.random() * 16)];
+            console.log("color:::::::::::",color)
+        }
+        return color;
+    }
+
+    function changeBackgroundColor() {
+        // Get the random color and apply it to the background
+        let newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+        // Change the button's background color to the same color
+        document.querySelector("button").style.backgroundColor = newColor;
+    }
+
+    // Set a random background color change every 5 seconds
+    setInterval(function() {
+        document.body.style.backgroundColor = getRandomColor();
+    }, 5000);
+</script>
+
+<body>
+   <button onclick="changeBackgroundColor()">Change Background Color</button> 
+</body>
+</html>

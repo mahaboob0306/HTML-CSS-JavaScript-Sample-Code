@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Browser Object Model</h1>
+    <script>
+        window.alert("Do you want really the delete the files...?")
+        let response=window.confirm("Do you want really delete the files");
+        console.log(response);
+        let userInput=window.prompt("enter your name");
+        console.log(userInput);
+        window.onload=function(){
+        // let windowopen=window.open('https://www.goggle.com',"_blank","width=300,height=300");
+        // console.log("window loaded sucessfully");
+        let info_height=window.innerHeight;
+        let info_width=window.innerWidth;
+        window.alert(`window onload resized new height::::::::${info_height}`)
+        window.alert(`window  onload resized new widthhh::::::::${info_width}`)
+
+        console.log(`window onload resized new widthhh::::::::${info_height},${info_width}`);
+        }
+        window.onresize=function(){
+            let info_height=window.innerHeight;
+        let info_width=window.innerWidth;
+        window.alert(`window resized new height::::::::${info_height}`)
+        window.alert(`window resized new widthhh::::::::${info_width}`)
+
+        console.log(`window resized new widthhh::::::::${info_height},${info_width}`);   
+        }
+        console.log(navigator.userAgent);//Browser Information
+        console.log(navigator.platform);//OS Details
+        console.log(navigator.language);//Browser Language(eg:"en-us")
+        console.log(navigator.onLine);//checks if browser is online(true/false)
+
+        //key properties and Methods of Location
+        console.log(location.href)//Returns the current URL
+        console.log(location.hostname)//Returns the domain name
+        console.log(location.pathname)//Returns the relative path
+        console.log(location.protocol)//Returns the http or https
+        //Methods w.r.t screen
+        console.log(screen.width);
+        console.log(screen.height);
+        console.log(screen.availWidth);
+        console.log(screen.availHeight);
+        screen.log(screen.colorDepth)
+
+    </script>
+</body>
+</html>
