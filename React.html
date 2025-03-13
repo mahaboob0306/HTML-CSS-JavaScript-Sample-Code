@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>React js</title>
+
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // var ReactButtonElement=React.createElement("button",null,"React button");
+        // ReactDOM.render(ReactButtonElement,document.querySelector("body"))
+        //ReactDOM.render(ReactButtonElement,document.querySelector("body"))//Single react element
+        var h2=React.createElement("h2",{id:"title",name:"heading"},"This is creates multiple elements");
+        var button=React.createElement("button",null,"React button");
+        var image=React.createElement("img",{src:"download.jpg",width:"300",height:"100px",alt:"img"})
+        var p=React.createElement("p",null,"This is ReactElement Paragraph")
+        ReactDOM.render([h2,button,h2,h2,button,image,p],document.getElementById("container"))
+    </script>   
+</body>
+</html>
